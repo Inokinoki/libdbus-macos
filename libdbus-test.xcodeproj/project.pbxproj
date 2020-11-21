@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A2743E25696C88005A226C /* dbus-threads.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273A125696C87005A226C /* dbus-threads.h */; };
+		14A2743F25696C88005A226C /* dbus-list.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273A225696C87005A226C /* dbus-list.c */; };
+		14A2744025696C88005A226C /* dbus-message-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273A325696C87005A226C /* dbus-message-private.h */; };
+		14A2744125696C88005A226C /* dbus-userdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273A425696C87005A226C /* dbus-userdb.h */; };
+		14A2744225696C88005A226C /* dbus-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273A525696C87005A226C /* dbus-server.c */; };
+		14A2744325696C88005A226C /* dbus-types.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273A625696C87005A226C /* dbus-types.h */; };
+		14A2744425696C88005A226C /* dbus-message.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273A725696C87005A226C /* dbus-message.h */; };
+		14A2744525696C88005A226C /* dbus-message-factory.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273A825696C87005A226C /* dbus-message-factory.c */; };
+		14A2744625696C88005A226C /* dbus-nonce.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273A925696C87005A226C /* dbus-nonce.c */; };
+		14A2744725696C88005A226C /* dbus-sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273AA25696C87005A226C /* dbus-sha.h */; };
+		14A2744825696C88005A226C /* dbus-pipe-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273AB25696C87005A226C /* dbus-pipe-unix.c */; };
+		14A2744925696C88005A226C /* dbus-userdb-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273AC25696C87005A226C /* dbus-userdb-util.c */; };
+		14A2744A25696C88005A226C /* dbus-object-tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273AD25696C87005A226C /* dbus-object-tree.c */; };
+		14A2744B25696C88005A226C /* dbus-uuidgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273AE25696C87005A226C /* dbus-uuidgen.h */; };
+		14A2744C25696C88005A226C /* dbus-marshal-recursive-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273AF25696C87005A226C /* dbus-marshal-recursive-util.c */; };
+		14A2744D25696C88005A226C /* dbus-server-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273B025696C87005A226C /* dbus-server-protected.h */; };
+		14A2744E25696C88005A226C /* dbus-string.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273B125696C87005A226C /* dbus-string.c */; };
+		14A2744F25696C88005A226C /* dbus-pending-call.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273B225696C87005A226C /* dbus-pending-call.c */; };
+		14A2745125696C88005A226C /* dbus-valgrind-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273B425696C87005A226C /* dbus-valgrind-internal.h */; };
+		14A2745225696C88005A226C /* dbus-socket-set.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273B525696C87005A226C /* dbus-socket-set.h */; };
+		14A2745325696C88005A226C /* dbus-errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273B625696C87005A226C /* dbus-errors.h */; };
+		14A2745425696C88005A226C /* dbus-marshal-recursive.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273B725696C87005A226C /* dbus-marshal-recursive.h */; };
+		14A2745525696C88005A226C /* dbus-auth-script.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273B825696C87005A226C /* dbus-auth-script.c */; };
+		14A2745625696C88005A226C /* dbus-sysdeps.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273B925696C87005A226C /* dbus-sysdeps.c */; };
+		14A2745825696C88005A226C /* dbus-server-launchd.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273BB25696C87005A226C /* dbus-server-launchd.h */; };
+		14A2745925696C88005A226C /* dbus-shell.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273BC25696C87005A226C /* dbus-shell.h */; };
+		14A2745A25696C88005A226C /* dbus-bus.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273BD25696C87005A226C /* dbus-bus.h */; };
+		14A2745B25696C88005A226C /* dbus-pending-call-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273BE25696C87005A226C /* dbus-pending-call-internal.h */; };
+		14A2745D25696C88005A226C /* dbus-timeout.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C025696C87005A226C /* dbus-timeout.c */; };
+		14A2745E25696C88005A226C /* dbus-server-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C125696C87005A226C /* dbus-server-unix.c */; };
+		14A2745F25696C88005A226C /* dbus-internals.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C225696C87005A226C /* dbus-internals.c */; };
+		14A2746225696C88005A226C /* dbus-asv-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C525696C87005A226C /* dbus-asv-util.c */; };
+		14A2746325696C88005A226C /* dbus-transport-socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C625696C87005A226C /* dbus-transport-socket.c */; };
+		14A2746425696C88005A226C /* dbus-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C725696C87005A226C /* dbus-auth.c */; };
+		14A2746525696C88005A226C /* dbus-marshal-byteswap.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273C825696C87005A226C /* dbus-marshal-byteswap.h */; };
+		14A2746625696C88005A226C /* dbus-mempool.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273C925696C87005A226C /* dbus-mempool.c */; };
+		14A2746725696C88005A226C /* dbus-connection-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273CA25696C87005A226C /* dbus-connection-internal.h */; };
+		14A2746825696C88005A226C /* dbus-marshal-validate.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273CB25696C87005A226C /* dbus-marshal-validate.h */; };
+		14A2746925696C88005A226C /* dbus-auth-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273CC25696C87005A226C /* dbus-auth-util.c */; };
+		14A2746A25696C88005A226C /* dbus-pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273CD25696C87005A226C /* dbus-pipe.c */; };
+		14A2746B25696C88005A226C /* dbus-address.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273CE25696C87005A226C /* dbus-address.h */; };
+		14A2746C25696C88005A226C /* dbus-keyring.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273CF25696C87005A226C /* dbus-keyring.c */; };
+		14A2746D25696C88005A226C /* dbus-marshal-byteswap-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273D025696C87005A226C /* dbus-marshal-byteswap-util.c */; };
+		14A2746E25696C88005A226C /* dbus-file.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D125696C87005A226C /* dbus-file.h */; };
+		14A2746F25696C88005A226C /* dbus-test.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D225696C87005A226C /* dbus-test.h */; };
+		14A2747125696C88005A226C /* dbus.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D425696C87005A226C /* dbus.h */; };
+		14A2747225696C88005A226C /* dbus-connection.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D625696C87005A226C /* dbus-connection.h */; };
+		14A2747325696C88005A226C /* dbus-transport.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D725696C87005A226C /* dbus-transport.h */; };
+		14A2747425696C88005A226C /* dbus-dataslot.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D825696C87005A226C /* dbus-dataslot.h */; };
+		14A2747525696C88005A226C /* dbus-misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273D925696C87005A226C /* dbus-misc.h */; };
+		14A2747625696C88005A226C /* dbus-threads-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273DA25696C87005A226C /* dbus-threads-internal.h */; };
+		14A2747725696C88005A226C /* dbus-spawn.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273DB25696C87005A226C /* dbus-spawn.h */; };
+		14A2747825696C88005A226C /* dbus-sysdeps-unix.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273DC25696C87005A226C /* dbus-sysdeps-unix.h */; };
+		14A2747925696C88005A226C /* dbus-credentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273DD25696C87005A226C /* dbus-credentials.h */; };
+		14A2747B25696C88005A226C /* dbus-transport-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273DF25696C87005A226C /* dbus-transport-unix.c */; };
+		14A2747C25696C88005A226C /* dbus-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E025696C87005A226C /* dbus-resources.c */; };
+		14A2747D25696C88005A226C /* dbus-server-debug-pipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273E125696C87005A226C /* dbus-server-debug-pipe.h */; };
+		14A2747E25696C88005A226C /* dbus-syntax.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273E225696C87005A226C /* dbus-syntax.h */; };
+		14A2747F25696C88005A226C /* dbus-memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E325696C87005A226C /* dbus-memory.c */; };
+		14A2748125696C88005A226C /* dbus-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E525696C87005A226C /* dbus-hash.c */; };
+		14A2748225696C88005A226C /* dbus-shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273E625696C87005A226C /* dbus-shared.h */; };
+		14A2748325696C88005A226C /* dbus-watch.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E725696C87005A226C /* dbus-watch.c */; };
+		14A2748425696C88005A226C /* dbus-marshal-validate-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E825696C87005A226C /* dbus-marshal-validate-util.c */; };
+		14A2748525696C88005A226C /* dbus-mainloop.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273E925696C87005A226C /* dbus-mainloop.c */; };
+		14A2748625696C88005A226C /* dbus-credentials-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273EB25696C87005A226C /* dbus-credentials-util.c */; };
+		14A2748725696C88005A226C /* dbus-marshal-header.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273EC25696C87005A226C /* dbus-marshal-header.h */; };
+		14A2748825696C88005A226C /* dbus-message-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273ED25696C87005A226C /* dbus-message-internal.h */; };
+		14A2748925696C88005A226C /* dbus-signature.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273EE25696C87005A226C /* dbus-signature.c */; };
+		14A2748A25696C88005A226C /* dbus-server-socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273EF25696C87005A226C /* dbus-server-socket.h */; };
+		14A2748B25696C88005A226C /* dbus-marshal-basic.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273F025696C87005A226C /* dbus-marshal-basic.h */; };
+		14A2748C25696C88005A226C /* dbus-sysdeps-util-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273F125696C87005A226C /* dbus-sysdeps-util-unix.c */; };
+		14A2748D25696C88005A226C /* dbus-sysdeps-pthread.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273F225696C87005A226C /* dbus-sysdeps-pthread.c */; };
+		14A2748E25696C88005A226C /* dbus-pending-call.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273F425696C87005A226C /* dbus-pending-call.h */; };
+		14A2749125696C88005A226C /* dbus-string.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273F725696C87005A226C /* dbus-string.h */; };
+		14A2749325696C88005A226C /* dbus-marshal-recursive.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273FA25696C87005A226C /* dbus-marshal-recursive.c */; };
+		14A2749425696C88005A226C /* dbus-errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273FB25696C87005A226C /* dbus-errors.c */; };
+		14A2749525696C88005A226C /* dbus-socket-set.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273FC25696C87005A226C /* dbus-socket-set.c */; };
+		14A2749625696C88005A226C /* dbus-uuidgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273FD25696C87005A226C /* dbus-uuidgen.c */; };
+		14A2749725696C88005A226C /* dbus-sysdeps-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A273FE25696C87005A226C /* dbus-sysdeps-util.c */; };
+		14A2749825696C88005A226C /* dbus-object-tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A273FF25696C87005A226C /* dbus-object-tree.h */; };
+		14A2749925696C88005A226C /* dbus-message-factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740025696C87005A226C /* dbus-message-factory.h */; };
+		14A2749A25696C88005A226C /* dbus-message.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740125696C87005A226C /* dbus-message.c */; };
+		14A2749B25696C88005A226C /* dbus-sha.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740225696C87005A226C /* dbus-sha.c */; };
+		14A2749C25696C88005A226C /* dbus-nonce.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740325696C87005A226C /* dbus-nonce.h */; };
+		14A2749D25696C88005A226C /* dbus-list.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740425696C87005A226C /* dbus-list.h */; };
+		14A2749E25696C88005A226C /* dbus-threads.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740525696C87005A226C /* dbus-threads.c */; };
+		14A2749F25696C88005A226C /* dbus-server.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740725696C87005A226C /* dbus-server.h */; };
+		14A274A025696C88005A226C /* dbus-userdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740825696C87005A226C /* dbus-userdb.c */; };
+		14A274A225696C88005A226C /* dbus-marshal-validate.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740A25696C87005A226C /* dbus-marshal-validate.c */; };
+		14A274A325696C88005A226C /* dbus-mempool.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740B25696C87005A226C /* dbus-mempool.h */; };
+		14A274A425696C88005A226C /* dbus-keyring.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740C25696C87005A226C /* dbus-keyring.h */; };
+		14A274A525696C88005A226C /* dbus-pipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2740D25696C87005A226C /* dbus-pipe.h */; };
+		14A274A625696C88005A226C /* dbus-address.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2740E25696C87005A226C /* dbus-address.c */; };
+		14A274A825696C88005A226C /* dbus-auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741025696C87005A226C /* dbus-auth.h */; };
+		14A274A925696C88005A226C /* dbus-transport-socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741125696C87005A226C /* dbus-transport-socket.h */; };
+		14A274AA25696C88005A226C /* dbus-marshal-byteswap.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2741225696C87005A226C /* dbus-marshal-byteswap.c */; };
+		14A274AB25696C88005A226C /* dbus-server-unix.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741325696C87005A226C /* dbus-server-unix.h */; };
+		14A274AC25696C88005A226C /* dbus-timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741425696C87005A226C /* dbus-timeout.h */; };
+		14A274AE25696C88005A226C /* dbus-bus.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2741625696C88005A226C /* dbus-bus.c */; };
+		14A274AF25696C88005A226C /* dbus-shell.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2741725696C88005A226C /* dbus-shell.c */; };
+		14A274B025696C88005A226C /* dbus-asv-util.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741825696C88005A226C /* dbus-asv-util.h */; };
+		14A274B125696C88005A226C /* dbus-string-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741925696C88005A226C /* dbus-string-private.h */; };
+		14A274B325696C88005A226C /* dbus-internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741B25696C88005A226C /* dbus-internals.h */; };
+		14A274B425696C88005A226C /* dbus-auth-script.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741C25696C88005A226C /* dbus-auth-script.h */; };
+		14A274B525696C88005A226C /* dbus-server-launchd.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2741D25696C88005A226C /* dbus-server-launchd.c */; };
+		14A274B725696C88005A226C /* dbus-sysdeps.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2741F25696C88005A226C /* dbus-sysdeps.h */; };
+		14A274B825696C88005A226C /* dbus-memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2742025696C88005A226C /* dbus-memory.h */; };
+		14A274B925696C88005A226C /* dbus-resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2742125696C88005A226C /* dbus-resources.h */; };
+		14A274BA25696C88005A226C /* dbus-server-debug-pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742225696C88005A226C /* dbus-server-debug-pipe.c */; };
+		14A274BB25696C88005A226C /* dbus-syntax.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742325696C88005A226C /* dbus-syntax.c */; };
+		14A274BC25696C88005A226C /* dbus-transport-unix.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2742425696C88005A226C /* dbus-transport-unix.h */; };
+		14A274BD25696C88005A226C /* dbus-credentials.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742525696C88005A226C /* dbus-credentials.c */; };
+		14A274BE25696C88005A226C /* dbus-transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742625696C88005A226C /* dbus-transport.c */; };
+		14A274BF25696C88005A226C /* dbus-spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742725696C88005A226C /* dbus-spawn.c */; };
+		14A274C025696C88005A226C /* dbus-sysdeps-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742825696C88005A226C /* dbus-sysdeps-unix.c */; };
+		14A274C125696C88005A226C /* dbus-misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742925696C88005A226C /* dbus-misc.c */; };
+		14A274C225696C88005A226C /* dbus-message-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742A25696C88005A226C /* dbus-message-util.c */; };
+		14A274C325696C88005A226C /* dbus-dataslot.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742B25696C88005A226C /* dbus-dataslot.c */; };
+		14A274C425696C88005A226C /* dbus-test.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742C25696C88005A226C /* dbus-test.c */; };
+		14A274C625696C88005A226C /* dbus-connection.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742E25696C88005A226C /* dbus-connection.c */; };
+		14A274C725696C88005A226C /* dbus-file-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2742F25696C88005A226C /* dbus-file-unix.c */; };
+		14A274C825696C88005A226C /* dbus-sockets-win.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743025696C88005A226C /* dbus-sockets-win.h */; };
+		14A274C925696C88005A226C /* dbus-file.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743125696C88005A226C /* dbus-file.c */; };
+		14A274CA25696C88005A226C /* dbus-macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743225696C88005A226C /* dbus-macros.h */; };
+		14A274CB25696C88005A226C /* dbus-socket-set-poll.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743325696C88005A226C /* dbus-socket-set-poll.c */; };
+		14A274CC25696C88005A226C /* dbus-protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743425696C88005A226C /* dbus-protocol.h */; };
+		14A274CD25696C88005A226C /* dbus-string-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743525696C88005A226C /* dbus-string-util.c */; };
+		14A274CE25696C88005A226C /* dbus-transport-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743625696C88005A226C /* dbus-transport-protected.h */; };
+		14A274CF25696C88005A226C /* dbus-server-socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743725696C88005A226C /* dbus-server-socket.c */; };
+		14A274D025696C88005A226C /* dbus-signature.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743825696C88005A226C /* dbus-signature.h */; };
+		14A274D125696C88005A226C /* dbus-marshal-header.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743925696C88005A226C /* dbus-marshal-header.c */; };
+		14A274D225696C88005A226C /* dbus-marshal-basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 14A2743A25696C88005A226C /* dbus-marshal-basic.c */; };
+		14A274D325696C88005A226C /* dbus-watch.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743B25696C88005A226C /* dbus-watch.h */; };
+		14A274D425696C88005A226C /* dbus-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743C25696C88005A226C /* dbus-hash.h */; };
+		14A274D525696C88005A226C /* dbus-mainloop.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A2743D25696C88005A226C /* dbus-mainloop.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14A2739925696C64005A226C /* liblibdbus-test.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "liblibdbus-test.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A273A125696C87005A226C /* dbus-threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-threads.h"; sourceTree = "<group>"; };
+		14A273A225696C87005A226C /* dbus-list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-list.c"; sourceTree = "<group>"; };
+		14A273A325696C87005A226C /* dbus-message-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-message-private.h"; sourceTree = "<group>"; };
+		14A273A425696C87005A226C /* dbus-userdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-userdb.h"; sourceTree = "<group>"; };
+		14A273A525696C87005A226C /* dbus-server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-server.c"; sourceTree = "<group>"; };
+		14A273A625696C87005A226C /* dbus-types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-types.h"; sourceTree = "<group>"; };
+		14A273A725696C87005A226C /* dbus-message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-message.h"; sourceTree = "<group>"; };
+		14A273A825696C87005A226C /* dbus-message-factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-message-factory.c"; sourceTree = "<group>"; };
+		14A273A925696C87005A226C /* dbus-nonce.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-nonce.c"; sourceTree = "<group>"; };
+		14A273AA25696C87005A226C /* dbus-sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-sha.h"; sourceTree = "<group>"; };
+		14A273AB25696C87005A226C /* dbus-pipe-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-pipe-unix.c"; sourceTree = "<group>"; };
+		14A273AC25696C87005A226C /* dbus-userdb-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-userdb-util.c"; sourceTree = "<group>"; };
+		14A273AD25696C87005A226C /* dbus-object-tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-object-tree.c"; sourceTree = "<group>"; };
+		14A273AE25696C87005A226C /* dbus-uuidgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-uuidgen.h"; sourceTree = "<group>"; };
+		14A273AF25696C87005A226C /* dbus-marshal-recursive-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-recursive-util.c"; sourceTree = "<group>"; };
+		14A273B025696C87005A226C /* dbus-server-protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server-protected.h"; sourceTree = "<group>"; };
+		14A273B125696C87005A226C /* dbus-string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-string.c"; sourceTree = "<group>"; };
+		14A273B225696C87005A226C /* dbus-pending-call.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-pending-call.c"; sourceTree = "<group>"; };
+		14A273B425696C87005A226C /* dbus-valgrind-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-valgrind-internal.h"; sourceTree = "<group>"; };
+		14A273B525696C87005A226C /* dbus-socket-set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-socket-set.h"; sourceTree = "<group>"; };
+		14A273B625696C87005A226C /* dbus-errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-errors.h"; sourceTree = "<group>"; };
+		14A273B725696C87005A226C /* dbus-marshal-recursive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-marshal-recursive.h"; sourceTree = "<group>"; };
+		14A273B825696C87005A226C /* dbus-auth-script.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-auth-script.c"; sourceTree = "<group>"; };
+		14A273B925696C87005A226C /* dbus-sysdeps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sysdeps.c"; sourceTree = "<group>"; };
+		14A273BB25696C87005A226C /* dbus-server-launchd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server-launchd.h"; sourceTree = "<group>"; };
+		14A273BC25696C87005A226C /* dbus-shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-shell.h"; sourceTree = "<group>"; };
+		14A273BD25696C87005A226C /* dbus-bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-bus.h"; sourceTree = "<group>"; };
+		14A273BE25696C87005A226C /* dbus-pending-call-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-pending-call-internal.h"; sourceTree = "<group>"; };
+		14A273C025696C87005A226C /* dbus-timeout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-timeout.c"; sourceTree = "<group>"; };
+		14A273C125696C87005A226C /* dbus-server-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-server-unix.c"; sourceTree = "<group>"; };
+		14A273C225696C87005A226C /* dbus-internals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-internals.c"; sourceTree = "<group>"; };
+		14A273C525696C87005A226C /* dbus-asv-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-asv-util.c"; sourceTree = "<group>"; };
+		14A273C625696C87005A226C /* dbus-transport-socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-transport-socket.c"; sourceTree = "<group>"; };
+		14A273C725696C87005A226C /* dbus-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-auth.c"; sourceTree = "<group>"; };
+		14A273C825696C87005A226C /* dbus-marshal-byteswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-marshal-byteswap.h"; sourceTree = "<group>"; };
+		14A273C925696C87005A226C /* dbus-mempool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-mempool.c"; sourceTree = "<group>"; };
+		14A273CA25696C87005A226C /* dbus-connection-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-connection-internal.h"; sourceTree = "<group>"; };
+		14A273CB25696C87005A226C /* dbus-marshal-validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-marshal-validate.h"; sourceTree = "<group>"; };
+		14A273CC25696C87005A226C /* dbus-auth-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-auth-util.c"; sourceTree = "<group>"; };
+		14A273CD25696C87005A226C /* dbus-pipe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-pipe.c"; sourceTree = "<group>"; };
+		14A273CE25696C87005A226C /* dbus-address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-address.h"; sourceTree = "<group>"; };
+		14A273CF25696C87005A226C /* dbus-keyring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-keyring.c"; sourceTree = "<group>"; };
+		14A273D025696C87005A226C /* dbus-marshal-byteswap-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-byteswap-util.c"; sourceTree = "<group>"; };
+		14A273D125696C87005A226C /* dbus-file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-file.h"; sourceTree = "<group>"; };
+		14A273D225696C87005A226C /* dbus-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-test.h"; sourceTree = "<group>"; };
+		14A273D425696C87005A226C /* dbus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbus.h; sourceTree = "<group>"; };
+		14A273D625696C87005A226C /* dbus-connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-connection.h"; sourceTree = "<group>"; };
+		14A273D725696C87005A226C /* dbus-transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-transport.h"; sourceTree = "<group>"; };
+		14A273D825696C87005A226C /* dbus-dataslot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-dataslot.h"; sourceTree = "<group>"; };
+		14A273D925696C87005A226C /* dbus-misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-misc.h"; sourceTree = "<group>"; };
+		14A273DA25696C87005A226C /* dbus-threads-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-threads-internal.h"; sourceTree = "<group>"; };
+		14A273DB25696C87005A226C /* dbus-spawn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-spawn.h"; sourceTree = "<group>"; };
+		14A273DC25696C87005A226C /* dbus-sysdeps-unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-sysdeps-unix.h"; sourceTree = "<group>"; };
+		14A273DD25696C87005A226C /* dbus-credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-credentials.h"; sourceTree = "<group>"; };
+		14A273DF25696C87005A226C /* dbus-transport-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-transport-unix.c"; sourceTree = "<group>"; };
+		14A273E025696C87005A226C /* dbus-resources.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-resources.c"; sourceTree = "<group>"; };
+		14A273E125696C87005A226C /* dbus-server-debug-pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server-debug-pipe.h"; sourceTree = "<group>"; };
+		14A273E225696C87005A226C /* dbus-syntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-syntax.h"; sourceTree = "<group>"; };
+		14A273E325696C87005A226C /* dbus-memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-memory.c"; sourceTree = "<group>"; };
+		14A273E525696C87005A226C /* dbus-hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-hash.c"; sourceTree = "<group>"; };
+		14A273E625696C87005A226C /* dbus-shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-shared.h"; sourceTree = "<group>"; };
+		14A273E725696C87005A226C /* dbus-watch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-watch.c"; sourceTree = "<group>"; };
+		14A273E825696C87005A226C /* dbus-marshal-validate-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-validate-util.c"; sourceTree = "<group>"; };
+		14A273E925696C87005A226C /* dbus-mainloop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-mainloop.c"; sourceTree = "<group>"; };
+		14A273EA25696C87005A226C /* dbus-arch-deps.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dbus-arch-deps.h.in"; sourceTree = "<group>"; };
+		14A273EB25696C87005A226C /* dbus-credentials-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-credentials-util.c"; sourceTree = "<group>"; };
+		14A273EC25696C87005A226C /* dbus-marshal-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-marshal-header.h"; sourceTree = "<group>"; };
+		14A273ED25696C87005A226C /* dbus-message-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-message-internal.h"; sourceTree = "<group>"; };
+		14A273EE25696C87005A226C /* dbus-signature.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-signature.c"; sourceTree = "<group>"; };
+		14A273EF25696C87005A226C /* dbus-server-socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server-socket.h"; sourceTree = "<group>"; };
+		14A273F025696C87005A226C /* dbus-marshal-basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-marshal-basic.h"; sourceTree = "<group>"; };
+		14A273F125696C87005A226C /* dbus-sysdeps-util-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sysdeps-util-unix.c"; sourceTree = "<group>"; };
+		14A273F225696C87005A226C /* dbus-sysdeps-pthread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sysdeps-pthread.c"; sourceTree = "<group>"; };
+		14A273F425696C87005A226C /* dbus-pending-call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-pending-call.h"; sourceTree = "<group>"; };
+		14A273F725696C87005A226C /* dbus-string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-string.h"; sourceTree = "<group>"; };
+		14A273FA25696C87005A226C /* dbus-marshal-recursive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-recursive.c"; sourceTree = "<group>"; };
+		14A273FB25696C87005A226C /* dbus-errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-errors.c"; sourceTree = "<group>"; };
+		14A273FC25696C87005A226C /* dbus-socket-set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-socket-set.c"; sourceTree = "<group>"; };
+		14A273FD25696C87005A226C /* dbus-uuidgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-uuidgen.c"; sourceTree = "<group>"; };
+		14A273FE25696C87005A226C /* dbus-sysdeps-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sysdeps-util.c"; sourceTree = "<group>"; };
+		14A273FF25696C87005A226C /* dbus-object-tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-object-tree.h"; sourceTree = "<group>"; };
+		14A2740025696C87005A226C /* dbus-message-factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-message-factory.h"; sourceTree = "<group>"; };
+		14A2740125696C87005A226C /* dbus-message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-message.c"; sourceTree = "<group>"; };
+		14A2740225696C87005A226C /* dbus-sha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sha.c"; sourceTree = "<group>"; };
+		14A2740325696C87005A226C /* dbus-nonce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-nonce.h"; sourceTree = "<group>"; };
+		14A2740425696C87005A226C /* dbus-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-list.h"; sourceTree = "<group>"; };
+		14A2740525696C87005A226C /* dbus-threads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-threads.c"; sourceTree = "<group>"; };
+		14A2740725696C87005A226C /* dbus-server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server.h"; sourceTree = "<group>"; };
+		14A2740825696C87005A226C /* dbus-userdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-userdb.c"; sourceTree = "<group>"; };
+		14A2740A25696C87005A226C /* dbus-marshal-validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-validate.c"; sourceTree = "<group>"; };
+		14A2740B25696C87005A226C /* dbus-mempool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-mempool.h"; sourceTree = "<group>"; };
+		14A2740C25696C87005A226C /* dbus-keyring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-keyring.h"; sourceTree = "<group>"; };
+		14A2740D25696C87005A226C /* dbus-pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-pipe.h"; sourceTree = "<group>"; };
+		14A2740E25696C87005A226C /* dbus-address.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-address.c"; sourceTree = "<group>"; };
+		14A2741025696C87005A226C /* dbus-auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-auth.h"; sourceTree = "<group>"; };
+		14A2741125696C87005A226C /* dbus-transport-socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-transport-socket.h"; sourceTree = "<group>"; };
+		14A2741225696C87005A226C /* dbus-marshal-byteswap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-byteswap.c"; sourceTree = "<group>"; };
+		14A2741325696C87005A226C /* dbus-server-unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-server-unix.h"; sourceTree = "<group>"; };
+		14A2741425696C87005A226C /* dbus-timeout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-timeout.h"; sourceTree = "<group>"; };
+		14A2741625696C88005A226C /* dbus-bus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-bus.c"; sourceTree = "<group>"; };
+		14A2741725696C88005A226C /* dbus-shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-shell.c"; sourceTree = "<group>"; };
+		14A2741825696C88005A226C /* dbus-asv-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-asv-util.h"; sourceTree = "<group>"; };
+		14A2741925696C88005A226C /* dbus-string-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-string-private.h"; sourceTree = "<group>"; };
+		14A2741B25696C88005A226C /* dbus-internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-internals.h"; sourceTree = "<group>"; };
+		14A2741C25696C88005A226C /* dbus-auth-script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-auth-script.h"; sourceTree = "<group>"; };
+		14A2741D25696C88005A226C /* dbus-server-launchd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-server-launchd.c"; sourceTree = "<group>"; };
+		14A2741F25696C88005A226C /* dbus-sysdeps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-sysdeps.h"; sourceTree = "<group>"; };
+		14A2742025696C88005A226C /* dbus-memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-memory.h"; sourceTree = "<group>"; };
+		14A2742125696C88005A226C /* dbus-resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-resources.h"; sourceTree = "<group>"; };
+		14A2742225696C88005A226C /* dbus-server-debug-pipe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-server-debug-pipe.c"; sourceTree = "<group>"; };
+		14A2742325696C88005A226C /* dbus-syntax.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-syntax.c"; sourceTree = "<group>"; };
+		14A2742425696C88005A226C /* dbus-transport-unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-transport-unix.h"; sourceTree = "<group>"; };
+		14A2742525696C88005A226C /* dbus-credentials.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-credentials.c"; sourceTree = "<group>"; };
+		14A2742625696C88005A226C /* dbus-transport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-transport.c"; sourceTree = "<group>"; };
+		14A2742725696C88005A226C /* dbus-spawn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-spawn.c"; sourceTree = "<group>"; };
+		14A2742825696C88005A226C /* dbus-sysdeps-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-sysdeps-unix.c"; sourceTree = "<group>"; };
+		14A2742925696C88005A226C /* dbus-misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-misc.c"; sourceTree = "<group>"; };
+		14A2742A25696C88005A226C /* dbus-message-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-message-util.c"; sourceTree = "<group>"; };
+		14A2742B25696C88005A226C /* dbus-dataslot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-dataslot.c"; sourceTree = "<group>"; };
+		14A2742C25696C88005A226C /* dbus-test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-test.c"; sourceTree = "<group>"; };
+		14A2742E25696C88005A226C /* dbus-connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-connection.c"; sourceTree = "<group>"; };
+		14A2742F25696C88005A226C /* dbus-file-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-file-unix.c"; sourceTree = "<group>"; };
+		14A2743025696C88005A226C /* dbus-sockets-win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-sockets-win.h"; sourceTree = "<group>"; };
+		14A2743125696C88005A226C /* dbus-file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-file.c"; sourceTree = "<group>"; };
+		14A2743225696C88005A226C /* dbus-macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-macros.h"; sourceTree = "<group>"; };
+		14A2743325696C88005A226C /* dbus-socket-set-poll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-socket-set-poll.c"; sourceTree = "<group>"; };
+		14A2743425696C88005A226C /* dbus-protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-protocol.h"; sourceTree = "<group>"; };
+		14A2743525696C88005A226C /* dbus-string-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-string-util.c"; sourceTree = "<group>"; };
+		14A2743625696C88005A226C /* dbus-transport-protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-transport-protected.h"; sourceTree = "<group>"; };
+		14A2743725696C88005A226C /* dbus-server-socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-server-socket.c"; sourceTree = "<group>"; };
+		14A2743825696C88005A226C /* dbus-signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-signature.h"; sourceTree = "<group>"; };
+		14A2743925696C88005A226C /* dbus-marshal-header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-header.c"; sourceTree = "<group>"; };
+		14A2743A25696C88005A226C /* dbus-marshal-basic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbus-marshal-basic.c"; sourceTree = "<group>"; };
+		14A2743B25696C88005A226C /* dbus-watch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-watch.h"; sourceTree = "<group>"; };
+		14A2743C25696C88005A226C /* dbus-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-hash.h"; sourceTree = "<group>"; };
+		14A2743D25696C88005A226C /* dbus-mainloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dbus-mainloop.h"; sourceTree = "<group>"; };
+		14A274D625696D3B005A226C /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		14A274D725696E66005A226C /* dbus-arch-deps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dbus-arch-deps.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14A2739725696C64005A226C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A2739025696C64005A226C = {
+			isa = PBXGroup;
+			children = (
+				14A274D625696D3B005A226C /* config.h */,
+				14A273A025696C87005A226C /* dbus */,
+				14A2739A25696C64005A226C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14A2739A25696C64005A226C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14A2739925696C64005A226C /* liblibdbus-test.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14A273A025696C87005A226C /* dbus */ = {
+			isa = PBXGroup;
+			children = (
+				14A273A125696C87005A226C /* dbus-threads.h */,
+				14A273A225696C87005A226C /* dbus-list.c */,
+				14A273A325696C87005A226C /* dbus-message-private.h */,
+				14A273A425696C87005A226C /* dbus-userdb.h */,
+				14A273A525696C87005A226C /* dbus-server.c */,
+				14A273A625696C87005A226C /* dbus-types.h */,
+				14A273A725696C87005A226C /* dbus-message.h */,
+				14A273A825696C87005A226C /* dbus-message-factory.c */,
+				14A273A925696C87005A226C /* dbus-nonce.c */,
+				14A273AA25696C87005A226C /* dbus-sha.h */,
+				14A273AB25696C87005A226C /* dbus-pipe-unix.c */,
+				14A273AC25696C87005A226C /* dbus-userdb-util.c */,
+				14A273AD25696C87005A226C /* dbus-object-tree.c */,
+				14A273AE25696C87005A226C /* dbus-uuidgen.h */,
+				14A273AF25696C87005A226C /* dbus-marshal-recursive-util.c */,
+				14A273B025696C87005A226C /* dbus-server-protected.h */,
+				14A273B125696C87005A226C /* dbus-string.c */,
+				14A273B225696C87005A226C /* dbus-pending-call.c */,
+				14A273B425696C87005A226C /* dbus-valgrind-internal.h */,
+				14A273B525696C87005A226C /* dbus-socket-set.h */,
+				14A273B625696C87005A226C /* dbus-errors.h */,
+				14A273B725696C87005A226C /* dbus-marshal-recursive.h */,
+				14A273B825696C87005A226C /* dbus-auth-script.c */,
+				14A273B925696C87005A226C /* dbus-sysdeps.c */,
+				14A273BB25696C87005A226C /* dbus-server-launchd.h */,
+				14A273BC25696C87005A226C /* dbus-shell.h */,
+				14A273BD25696C87005A226C /* dbus-bus.h */,
+				14A273BE25696C87005A226C /* dbus-pending-call-internal.h */,
+				14A273C025696C87005A226C /* dbus-timeout.c */,
+				14A273C125696C87005A226C /* dbus-server-unix.c */,
+				14A273C225696C87005A226C /* dbus-internals.c */,
+				14A273C525696C87005A226C /* dbus-asv-util.c */,
+				14A273C625696C87005A226C /* dbus-transport-socket.c */,
+				14A273C725696C87005A226C /* dbus-auth.c */,
+				14A273C825696C87005A226C /* dbus-marshal-byteswap.h */,
+				14A273C925696C87005A226C /* dbus-mempool.c */,
+				14A273CA25696C87005A226C /* dbus-connection-internal.h */,
+				14A273CB25696C87005A226C /* dbus-marshal-validate.h */,
+				14A273CC25696C87005A226C /* dbus-auth-util.c */,
+				14A273CD25696C87005A226C /* dbus-pipe.c */,
+				14A273CE25696C87005A226C /* dbus-address.h */,
+				14A273CF25696C87005A226C /* dbus-keyring.c */,
+				14A273D025696C87005A226C /* dbus-marshal-byteswap-util.c */,
+				14A273D125696C87005A226C /* dbus-file.h */,
+				14A273D225696C87005A226C /* dbus-test.h */,
+				14A273D425696C87005A226C /* dbus.h */,
+				14A273D625696C87005A226C /* dbus-connection.h */,
+				14A273D725696C87005A226C /* dbus-transport.h */,
+				14A273D825696C87005A226C /* dbus-dataslot.h */,
+				14A273D925696C87005A226C /* dbus-misc.h */,
+				14A273DA25696C87005A226C /* dbus-threads-internal.h */,
+				14A273DB25696C87005A226C /* dbus-spawn.h */,
+				14A273DC25696C87005A226C /* dbus-sysdeps-unix.h */,
+				14A273DD25696C87005A226C /* dbus-credentials.h */,
+				14A273DF25696C87005A226C /* dbus-transport-unix.c */,
+				14A273E025696C87005A226C /* dbus-resources.c */,
+				14A273E125696C87005A226C /* dbus-server-debug-pipe.h */,
+				14A273E225696C87005A226C /* dbus-syntax.h */,
+				14A273E325696C87005A226C /* dbus-memory.c */,
+				14A273E525696C87005A226C /* dbus-hash.c */,
+				14A273E625696C87005A226C /* dbus-shared.h */,
+				14A273E725696C87005A226C /* dbus-watch.c */,
+				14A273E825696C87005A226C /* dbus-marshal-validate-util.c */,
+				14A273E925696C87005A226C /* dbus-mainloop.c */,
+				14A273EA25696C87005A226C /* dbus-arch-deps.h.in */,
+				14A273EB25696C87005A226C /* dbus-credentials-util.c */,
+				14A273EC25696C87005A226C /* dbus-marshal-header.h */,
+				14A273ED25696C87005A226C /* dbus-message-internal.h */,
+				14A273EE25696C87005A226C /* dbus-signature.c */,
+				14A273EF25696C87005A226C /* dbus-server-socket.h */,
+				14A273F025696C87005A226C /* dbus-marshal-basic.h */,
+				14A273F125696C87005A226C /* dbus-sysdeps-util-unix.c */,
+				14A273F225696C87005A226C /* dbus-sysdeps-pthread.c */,
+				14A273F425696C87005A226C /* dbus-pending-call.h */,
+				14A273F725696C87005A226C /* dbus-string.h */,
+				14A273FA25696C87005A226C /* dbus-marshal-recursive.c */,
+				14A273FB25696C87005A226C /* dbus-errors.c */,
+				14A273FC25696C87005A226C /* dbus-socket-set.c */,
+				14A273FD25696C87005A226C /* dbus-uuidgen.c */,
+				14A273FE25696C87005A226C /* dbus-sysdeps-util.c */,
+				14A273FF25696C87005A226C /* dbus-object-tree.h */,
+				14A2740025696C87005A226C /* dbus-message-factory.h */,
+				14A2740125696C87005A226C /* dbus-message.c */,
+				14A2740225696C87005A226C /* dbus-sha.c */,
+				14A2740325696C87005A226C /* dbus-nonce.h */,
+				14A2740425696C87005A226C /* dbus-list.h */,
+				14A2740525696C87005A226C /* dbus-threads.c */,
+				14A2740725696C87005A226C /* dbus-server.h */,
+				14A2740825696C87005A226C /* dbus-userdb.c */,
+				14A2740A25696C87005A226C /* dbus-marshal-validate.c */,
+				14A2740B25696C87005A226C /* dbus-mempool.h */,
+				14A2740C25696C87005A226C /* dbus-keyring.h */,
+				14A2740D25696C87005A226C /* dbus-pipe.h */,
+				14A2740E25696C87005A226C /* dbus-address.c */,
+				14A2741025696C87005A226C /* dbus-auth.h */,
+				14A2741125696C87005A226C /* dbus-transport-socket.h */,
+				14A2741225696C87005A226C /* dbus-marshal-byteswap.c */,
+				14A2741325696C87005A226C /* dbus-server-unix.h */,
+				14A2741425696C87005A226C /* dbus-timeout.h */,
+				14A2741625696C88005A226C /* dbus-bus.c */,
+				14A2741725696C88005A226C /* dbus-shell.c */,
+				14A2741825696C88005A226C /* dbus-asv-util.h */,
+				14A2741925696C88005A226C /* dbus-string-private.h */,
+				14A2741B25696C88005A226C /* dbus-internals.h */,
+				14A2741C25696C88005A226C /* dbus-auth-script.h */,
+				14A2741D25696C88005A226C /* dbus-server-launchd.c */,
+				14A2741F25696C88005A226C /* dbus-sysdeps.h */,
+				14A2742025696C88005A226C /* dbus-memory.h */,
+				14A2742125696C88005A226C /* dbus-resources.h */,
+				14A2742225696C88005A226C /* dbus-server-debug-pipe.c */,
+				14A2742325696C88005A226C /* dbus-syntax.c */,
+				14A2742425696C88005A226C /* dbus-transport-unix.h */,
+				14A2742525696C88005A226C /* dbus-credentials.c */,
+				14A2742625696C88005A226C /* dbus-transport.c */,
+				14A2742725696C88005A226C /* dbus-spawn.c */,
+				14A2742825696C88005A226C /* dbus-sysdeps-unix.c */,
+				14A2742925696C88005A226C /* dbus-misc.c */,
+				14A2742A25696C88005A226C /* dbus-message-util.c */,
+				14A2742B25696C88005A226C /* dbus-dataslot.c */,
+				14A2742C25696C88005A226C /* dbus-test.c */,
+				14A2742E25696C88005A226C /* dbus-connection.c */,
+				14A2742F25696C88005A226C /* dbus-file-unix.c */,
+				14A2743025696C88005A226C /* dbus-sockets-win.h */,
+				14A2743125696C88005A226C /* dbus-file.c */,
+				14A2743225696C88005A226C /* dbus-macros.h */,
+				14A2743325696C88005A226C /* dbus-socket-set-poll.c */,
+				14A2743425696C88005A226C /* dbus-protocol.h */,
+				14A2743525696C88005A226C /* dbus-string-util.c */,
+				14A2743625696C88005A226C /* dbus-transport-protected.h */,
+				14A2743725696C88005A226C /* dbus-server-socket.c */,
+				14A2743825696C88005A226C /* dbus-signature.h */,
+				14A2743925696C88005A226C /* dbus-marshal-header.c */,
+				14A2743A25696C88005A226C /* dbus-marshal-basic.c */,
+				14A2743B25696C88005A226C /* dbus-watch.h */,
+				14A2743C25696C88005A226C /* dbus-hash.h */,
+				14A2743D25696C88005A226C /* dbus-mainloop.h */,
+				14A274D725696E66005A226C /* dbus-arch-deps.h */,
+			);
+			path = dbus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14A2739525696C64005A226C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A2747725696C88005A226C /* dbus-spawn.h in Headers */,
+				14A274A525696C88005A226C /* dbus-pipe.h in Headers */,
+				14A2748A25696C88005A226C /* dbus-server-socket.h in Headers */,
+				14A274AB25696C88005A226C /* dbus-server-unix.h in Headers */,
+				14A274B425696C88005A226C /* dbus-auth-script.h in Headers */,
+				14A2744025696C88005A226C /* dbus-message-private.h in Headers */,
+				14A2747925696C88005A226C /* dbus-credentials.h in Headers */,
+				14A274D525696C88005A226C /* dbus-mainloop.h in Headers */,
+				14A2747325696C88005A226C /* dbus-transport.h in Headers */,
+				14A2745A25696C88005A226C /* dbus-bus.h in Headers */,
+				14A274AC25696C88005A226C /* dbus-timeout.h in Headers */,
+				14A274D425696C88005A226C /* dbus-hash.h in Headers */,
+				14A2747125696C88005A226C /* dbus.h in Headers */,
+				14A2747525696C88005A226C /* dbus-misc.h in Headers */,
+				14A2748825696C88005A226C /* dbus-message-internal.h in Headers */,
+				14A2747425696C88005A226C /* dbus-dataslot.h in Headers */,
+				14A274B725696C88005A226C /* dbus-sysdeps.h in Headers */,
+				14A2744725696C88005A226C /* dbus-sha.h in Headers */,
+				14A2749825696C88005A226C /* dbus-object-tree.h in Headers */,
+				14A2744425696C88005A226C /* dbus-message.h in Headers */,
+				14A2746F25696C88005A226C /* dbus-test.h in Headers */,
+				14A2748225696C88005A226C /* dbus-shared.h in Headers */,
+				14A274CA25696C88005A226C /* dbus-macros.h in Headers */,
+				14A274C825696C88005A226C /* dbus-sockets-win.h in Headers */,
+				14A2746E25696C88005A226C /* dbus-file.h in Headers */,
+				14A274D025696C88005A226C /* dbus-signature.h in Headers */,
+				14A2749125696C88005A226C /* dbus-string.h in Headers */,
+				14A2745925696C88005A226C /* dbus-shell.h in Headers */,
+				14A2746B25696C88005A226C /* dbus-address.h in Headers */,
+				14A2745B25696C88005A226C /* dbus-pending-call-internal.h in Headers */,
+				14A2747D25696C88005A226C /* dbus-server-debug-pipe.h in Headers */,
+				14A2747225696C88005A226C /* dbus-connection.h in Headers */,
+				14A2748725696C88005A226C /* dbus-marshal-header.h in Headers */,
+				14A274A425696C88005A226C /* dbus-keyring.h in Headers */,
+				14A2744B25696C88005A226C /* dbus-uuidgen.h in Headers */,
+				14A2748B25696C88005A226C /* dbus-marshal-basic.h in Headers */,
+				14A2747825696C88005A226C /* dbus-sysdeps-unix.h in Headers */,
+				14A274BC25696C88005A226C /* dbus-transport-unix.h in Headers */,
+				14A274B025696C88005A226C /* dbus-asv-util.h in Headers */,
+				14A2749F25696C88005A226C /* dbus-server.h in Headers */,
+				14A274B325696C88005A226C /* dbus-internals.h in Headers */,
+				14A2746725696C88005A226C /* dbus-connection-internal.h in Headers */,
+				14A274CE25696C88005A226C /* dbus-transport-protected.h in Headers */,
+				14A2743E25696C88005A226C /* dbus-threads.h in Headers */,
+				14A2747625696C88005A226C /* dbus-threads-internal.h in Headers */,
+				14A2745125696C88005A226C /* dbus-valgrind-internal.h in Headers */,
+				14A2745425696C88005A226C /* dbus-marshal-recursive.h in Headers */,
+				14A2749925696C88005A226C /* dbus-message-factory.h in Headers */,
+				14A274B825696C88005A226C /* dbus-memory.h in Headers */,
+				14A2744325696C88005A226C /* dbus-types.h in Headers */,
+				14A2744D25696C88005A226C /* dbus-server-protected.h in Headers */,
+				14A2745325696C88005A226C /* dbus-errors.h in Headers */,
+				14A274D325696C88005A226C /* dbus-watch.h in Headers */,
+				14A2747E25696C88005A226C /* dbus-syntax.h in Headers */,
+				14A274A925696C88005A226C /* dbus-transport-socket.h in Headers */,
+				14A274B125696C88005A226C /* dbus-string-private.h in Headers */,
+				14A274A825696C88005A226C /* dbus-auth.h in Headers */,
+				14A2746525696C88005A226C /* dbus-marshal-byteswap.h in Headers */,
+				14A2748E25696C88005A226C /* dbus-pending-call.h in Headers */,
+				14A2745225696C88005A226C /* dbus-socket-set.h in Headers */,
+				14A274A325696C88005A226C /* dbus-mempool.h in Headers */,
+				14A274B925696C88005A226C /* dbus-resources.h in Headers */,
+				14A2749D25696C88005A226C /* dbus-list.h in Headers */,
+				14A2749C25696C88005A226C /* dbus-nonce.h in Headers */,
+				14A2746825696C88005A226C /* dbus-marshal-validate.h in Headers */,
+				14A2745825696C88005A226C /* dbus-server-launchd.h in Headers */,
+				14A2744125696C88005A226C /* dbus-userdb.h in Headers */,
+				14A274CC25696C88005A226C /* dbus-protocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14A2739825696C64005A226C /* libdbus-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A2739D25696C64005A226C /* Build configuration list for PBXNativeTarget "libdbus-test" */;
+			buildPhases = (
+				14A2739525696C64005A226C /* Headers */,
+				14A2739625696C64005A226C /* Sources */,
+				14A2739725696C64005A226C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libdbus-test";
+			productName = "libibus-test";
+			productReference = 14A2739925696C64005A226C /* liblibdbus-test.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14A2739125696C64005A226C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = inoki;
+				TargetAttributes = {
+					14A2739825696C64005A226C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 14A2739425696C64005A226C /* Build configuration list for PBXProject "libdbus-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14A2739025696C64005A226C;
+			productRefGroup = 14A2739A25696C64005A226C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14A2739825696C64005A226C /* libdbus-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14A2739625696C64005A226C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A274CB25696C88005A226C /* dbus-socket-set-poll.c in Sources */,
+				14A2747F25696C88005A226C /* dbus-memory.c in Sources */,
+				14A274C225696C88005A226C /* dbus-message-util.c in Sources */,
+				14A2746425696C88005A226C /* dbus-auth.c in Sources */,
+				14A2746A25696C88005A226C /* dbus-pipe.c in Sources */,
+				14A2746C25696C88005A226C /* dbus-keyring.c in Sources */,
+				14A2746D25696C88005A226C /* dbus-marshal-byteswap-util.c in Sources */,
+				14A2748C25696C88005A226C /* dbus-sysdeps-util-unix.c in Sources */,
+				14A2744525696C88005A226C /* dbus-message-factory.c in Sources */,
+				14A274A625696C88005A226C /* dbus-address.c in Sources */,
+				14A2745E25696C88005A226C /* dbus-server-unix.c in Sources */,
+				14A274C425696C88005A226C /* dbus-test.c in Sources */,
+				14A2746325696C88005A226C /* dbus-transport-socket.c in Sources */,
+				14A274C925696C88005A226C /* dbus-file.c in Sources */,
+				14A2748525696C88005A226C /* dbus-mainloop.c in Sources */,
+				14A274BD25696C88005A226C /* dbus-credentials.c in Sources */,
+				14A2748D25696C88005A226C /* dbus-sysdeps-pthread.c in Sources */,
+				14A274CD25696C88005A226C /* dbus-string-util.c in Sources */,
+				14A2745D25696C88005A226C /* dbus-timeout.c in Sources */,
+				14A2749725696C88005A226C /* dbus-sysdeps-util.c in Sources */,
+				14A274B525696C88005A226C /* dbus-server-launchd.c in Sources */,
+				14A2744C25696C88005A226C /* dbus-marshal-recursive-util.c in Sources */,
+				14A2749E25696C88005A226C /* dbus-threads.c in Sources */,
+				14A274BE25696C88005A226C /* dbus-transport.c in Sources */,
+				14A274C025696C88005A226C /* dbus-sysdeps-unix.c in Sources */,
+				14A274A225696C88005A226C /* dbus-marshal-validate.c in Sources */,
+				14A274C625696C88005A226C /* dbus-connection.c in Sources */,
+				14A2746925696C88005A226C /* dbus-auth-util.c in Sources */,
+				14A2749425696C88005A226C /* dbus-errors.c in Sources */,
+				14A2746225696C88005A226C /* dbus-asv-util.c in Sources */,
+				14A274C325696C88005A226C /* dbus-dataslot.c in Sources */,
+				14A2748425696C88005A226C /* dbus-marshal-validate-util.c in Sources */,
+				14A2748625696C88005A226C /* dbus-credentials-util.c in Sources */,
+				14A274A025696C88005A226C /* dbus-userdb.c in Sources */,
+				14A2744A25696C88005A226C /* dbus-object-tree.c in Sources */,
+				14A274AE25696C88005A226C /* dbus-bus.c in Sources */,
+				14A2744E25696C88005A226C /* dbus-string.c in Sources */,
+				14A2747B25696C88005A226C /* dbus-transport-unix.c in Sources */,
+				14A274BF25696C88005A226C /* dbus-spawn.c in Sources */,
+				14A2749625696C88005A226C /* dbus-uuidgen.c in Sources */,
+				14A2748925696C88005A226C /* dbus-signature.c in Sources */,
+				14A274BA25696C88005A226C /* dbus-server-debug-pipe.c in Sources */,
+				14A274CF25696C88005A226C /* dbus-server-socket.c in Sources */,
+				14A274C125696C88005A226C /* dbus-misc.c in Sources */,
+				14A2744225696C88005A226C /* dbus-server.c in Sources */,
+				14A274D225696C88005A226C /* dbus-marshal-basic.c in Sources */,
+				14A2745625696C88005A226C /* dbus-sysdeps.c in Sources */,
+				14A274AF25696C88005A226C /* dbus-shell.c in Sources */,
+				14A2745525696C88005A226C /* dbus-auth-script.c in Sources */,
+				14A274D125696C88005A226C /* dbus-marshal-header.c in Sources */,
+				14A2748325696C88005A226C /* dbus-watch.c in Sources */,
+				14A274BB25696C88005A226C /* dbus-syntax.c in Sources */,
+				14A2744925696C88005A226C /* dbus-userdb-util.c in Sources */,
+				14A274C725696C88005A226C /* dbus-file-unix.c in Sources */,
+				14A2749B25696C88005A226C /* dbus-sha.c in Sources */,
+				14A2748125696C88005A226C /* dbus-hash.c in Sources */,
+				14A2744825696C88005A226C /* dbus-pipe-unix.c in Sources */,
+				14A2747C25696C88005A226C /* dbus-resources.c in Sources */,
+				14A2744F25696C88005A226C /* dbus-pending-call.c in Sources */,
+				14A274AA25696C88005A226C /* dbus-marshal-byteswap.c in Sources */,
+				14A2743F25696C88005A226C /* dbus-list.c in Sources */,
+				14A2749A25696C88005A226C /* dbus-message.c in Sources */,
+				14A2744625696C88005A226C /* dbus-nonce.c in Sources */,
+				14A2746625696C88005A226C /* dbus-mempool.c in Sources */,
+				14A2749525696C88005A226C /* dbus-socket-set.c in Sources */,
+				14A2749325696C88005A226C /* dbus-marshal-recursive.c in Sources */,
+				14A2745F25696C88005A226C /* dbus-internals.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14A2739B25696C64005A226C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		14A2739C25696C64005A226C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		14A2739E25696C64005A226C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GMJNW6P6DV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14A2739F25696C64005A226C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GMJNW6P6DV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14A2739425696C64005A226C /* Build configuration list for PBXProject "libdbus-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A2739B25696C64005A226C /* Debug */,
+				14A2739C25696C64005A226C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A2739D25696C64005A226C /* Build configuration list for PBXNativeTarget "libdbus-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A2739E25696C64005A226C /* Debug */,
+				14A2739F25696C64005A226C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14A2739125696C64005A226C /* Project object */;
+}
